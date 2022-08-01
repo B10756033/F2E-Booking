@@ -1,0 +1,423 @@
+body{
+    margin: 0; padding: 0;
+}
+img{
+    display:block;
+}
+/*上面那一排*/
+.top_img{
+    background-image: url('../image/room4-2.jfif');
+    max-width: 100%;
+    height: 43vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -200px;
+    overflow: hidden;
+    
+}
+.top_content{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto,2);
+    grid-row-gap: 2.1875rem;
+    -webkit-row-gap: 2.1875rem;
+    -moz-row-gap: 2.1875rem;
+    row-gap: 2.1875rem;
+    padding-top: 12vw;
+    width: 100%;
+}
+.logo img{
+    display:block; margin:auto;
+}
+.bookingInfo{
+    display: grid;
+    grid-template-columns: 100px 250px;
+    grid-column-gap: 1.5rem;
+    -webkit-column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+    column-gap: 1.5rem;
+    width: 100%;
+}
+.infoLeft{
+    float: left;
+    border-right: 1px solid #FFFFFF;
+    justify-content: center;
+}
+.infoLeft img,.infoRight img{
+    width: 20px;float: left;
+}
+.infoLeft img{
+    margin-right: 1.5rem;
+}
+.infoRight img{
+    margin-right: 1rem;
+}
+.item_text{
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.Info_item{
+    display: flex;
+    margin-bottom: 10px;
+}
+/*room-cards*/
+.room-cards{
+    position: relative;
+    top: -100px;
+}
+.room-cards_links{
+    display: grid;
+    align-content: start;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 0 15% 5% 15%;
+    
+}
+.room-cards_links > .room-card_wrapper{
+    background-color: #F7F7F7;
+    box-shadow: 2px 2px 9px 0 rgba(0,0,0,0.18);
+    width: 300px;
+    height: 350px;
+    margin: 0 auto; /* Added center */
+    float: none; /* Added center*/
+    
+}
+.room-card_wrapper img{ /*照片*/
+    width: 300px;
+    height: 280px;
+    display: block;
+    object-fit: cover;
+
+
+}
+.room-card_content{  /*區塊*/
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  right: 0;
+  background-color: #F7F7F7;
+  overflow: hidden;
+  width: 94%;
+  transition: .5s ease;
+  height: 70px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.room-card_link:hover .room-card_content {  /*移過去 容器*/
+    height: 40%;
+  }
+.room-card_link{  /*容器*/
+    width: 50%;
+    min-height: 360px;
+    /*font-weight:normal;*/
+    position: relative;
+    
+  width: 50%;
+}
+
+.card-price{
+    display: grid;
+    grid-template-columns: 90px 70px 50px 50px;
+    grid-column-gap: 1rem;
+    -webkit-column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 0.5rem;
+    position: relative;
+    top: 10px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    font-weight:normal;
+}
+h3{font-size: 1.35rem;
+    font-weight: 300;}
+.normalDayPrice_1,.normalDayPrice_2,.normalDayPrice_3,.normalDayPrice_4,.normalDayPrice_5,.normalDayPrice_6{
+    font-size: 21px;
+    color: #000000;
+    letter-spacing: 2.19px;
+    line-height: 31px;
+    position: relative;
+    bottom: 10px;
+}
+.normalDay{
+    font-size: 12px;
+    color: #000000;
+    letter-spacing: 1.25px;
+    line-height: 18px;
+}
+.holidayPrice_1,.holidayPrice_2,.holidayPrice_3,.holidayPrice_4,.holidayPrice_5,.holidayPrice_6,.holiday{
+    font-size: 12px;
+    color: #6D7278;
+    letter-spacing: 1.25px;
+    line-height: 18px;
+}/*
+@media screen and (max-width: 1100px) {
+    .room-cards_links{
+        display: grid;
+        align-content: start;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        padding: 0 15% 5% 15%;
+        
+    }
+}*/
+@media (max-width: 1300px) {
+    .room-cards_links{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding: 0 10% 5% 10%;
+    }
+    .top_img{
+        height: 50vw;
+    }
+    .top_content{
+        padding-top: 10vw;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .room-cards_links{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top_img{
+        height: 50%;
+        
+        background-position: 0 0;
+    }
+    .top_content{
+        
+        padding-top: 5vw;
+    }
+    .room-cards{
+        position: relative;
+        top: 20px;
+    }
+}
+.footer{
+    text-align: center;
+    color: #919395;
+}
+
+#preloader {/*   這是整個會蓋住畫面的底色色塊  */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    background-color: #fff;
+    z-index: 9999;
+  }
+  #status {/*   這是中間loading的gif坐標css,我們盡量讓他畫面置中  */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+  #status h1{/*   這是中間loading的gif坐標css,我們盡量讓他畫面置中  */
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -180%);
+
+  }
+
+  
+  /*!
+ * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
+ * Copyright 2015 Daniel Cardoso <@DanielCardoso>
+ * Licensed under MIT
+ */
+.la-ball-spin-clockwise-fade,
+.la-ball-spin-clockwise-fade > div {
+    position: relative;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.la-ball-spin-clockwise-fade {
+    display: block;
+    font-size: 0;
+    color: #fff;
+}
+.la-ball-spin-clockwise-fade.la-dark {
+    color: #333;
+}
+.la-ball-spin-clockwise-fade > div {
+    display: inline-block;
+    float: none;
+    background-color: currentColor;
+    border: 0 solid currentColor;
+}
+.la-ball-spin-clockwise-fade {
+    width: 32px;
+    height: 32px;
+}
+.la-ball-spin-clockwise-fade > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    margin-left: -4px;
+    border-radius: 100%;
+    -webkit-animation: ball-spin-clockwise-fade 1s infinite linear;
+       -moz-animation: ball-spin-clockwise-fade 1s infinite linear;
+         -o-animation: ball-spin-clockwise-fade 1s infinite linear;
+            animation: ball-spin-clockwise-fade 1s infinite linear;
+}
+.la-ball-spin-clockwise-fade > div:nth-child(1) {
+    top: 5%;
+    left: 50%;
+    -webkit-animation-delay: -.875s;
+       -moz-animation-delay: -.875s;
+         -o-animation-delay: -.875s;
+            animation-delay: -.875s;
+}
+.la-ball-spin-clockwise-fade > div:nth-child(2) {
+    top: 18.1801948466%;
+    left: 81.8198051534%;
+    -webkit-animation-delay: -.75s;
+       -moz-animation-delay: -.75s;
+         -o-animation-delay: -.75s;
+            animation-delay: -.75s;
+}
+.la-ball-spin-clockwise-fade > div:nth-child(3) {
+    top: 50%;
+    left: 95%;
+    -webkit-animation-delay: -.625s;
+       -moz-animation-delay: -.625s;
+         -o-animation-delay: -.625s;
+            animation-delay: -.625s;
+}
+.la-ball-spin-clockwise-fade > div:nth-child(4) {
+    top: 81.8198051534%;
+    left: 81.8198051534%;
+    -webkit-animation-delay: -.5s;
+       -moz-animation-delay: -.5s;
+         -o-animation-delay: -.5s;
+            animation-delay: -.5s;
+}
+.la-ball-spin-clockwise-fade > div:nth-child(5) {
+    top: 94.9999999966%;
+    left: 50.0000000005%;
+    -webkit-animation-delay: -.375s;
+       -moz-animation-delay: -.375s;
+         -o-animation-delay: -.375s;
+            animation-delay: -.375s;
+}
+.la-ball-spin-clockwise-fade > div:nth-child(6) {
+    top: 81.8198046966%;
+    left: 18.1801949248%;
+    -webkit-animation-delay: -.25s;
+       -moz-animation-delay: -.25s;
+         -o-animation-delay: -.25s;
+            animation-delay: -.25s;
+}
+.la-ball-spin-clockwise-fade > div:nth-child(7) {
+    top: 49.9999750815%;
+    left: 5.0000051215%;
+    -webkit-animation-delay: -.125s;
+       -moz-animation-delay: -.125s;
+         -o-animation-delay: -.125s;
+            animation-delay: -.125s;
+}
+.la-ball-spin-clockwise-fade > div:nth-child(8) {
+    top: 18.179464974%;
+    left: 18.1803700518%;
+    -webkit-animation-delay: 0s;
+       -moz-animation-delay: 0s;
+         -o-animation-delay: 0s;
+            animation-delay: 0s;
+}
+.la-ball-spin-clockwise-fade.la-sm {
+    width: 16px;
+    height: 16px;
+}
+.la-ball-spin-clockwise-fade.la-sm > div {
+    width: 4px;
+    height: 4px;
+    margin-top: -2px;
+    margin-left: -2px;
+}
+.la-ball-spin-clockwise-fade.la-2x {
+    width: 64px;
+    height: 64px;
+}
+.la-ball-spin-clockwise-fade.la-2x > div {
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+.la-ball-spin-clockwise-fade.la-3x {
+    width: 96px;
+    height: 96px;
+}
+.la-ball-spin-clockwise-fade.la-3x > div {
+    width: 24px;
+    height: 24px;
+    margin-top: -12px;
+    margin-left: -12px;
+}
+/*
+ * Animation
+ */
+@-webkit-keyframes ball-spin-clockwise-fade {
+    50% {
+        opacity: .25;
+        -webkit-transform: scale(.5);
+                transform: scale(.5);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+@-moz-keyframes ball-spin-clockwise-fade {
+    50% {
+        opacity: .25;
+        -moz-transform: scale(.5);
+             transform: scale(.5);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: scale(1);
+             transform: scale(1);
+    }
+}
+@-o-keyframes ball-spin-clockwise-fade {
+    50% {
+        opacity: .25;
+        -o-transform: scale(.5);
+           transform: scale(.5);
+    }
+    100% {
+        opacity: 1;
+        -o-transform: scale(1);
+           transform: scale(1);
+    }
+}
+@keyframes ball-spin-clockwise-fade {
+    50% {
+        opacity: .25;
+        -webkit-transform: scale(.5);
+           -moz-transform: scale(.5);
+             -o-transform: scale(.5);
+                transform: scale(.5);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+           -moz-transform: scale(1);
+             -o-transform: scale(1);
+                transform: scale(1);
+    }
+}
