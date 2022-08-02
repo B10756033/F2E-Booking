@@ -104,7 +104,8 @@ section.left{
 }
 .time .checkIn_time,.time .checkOut_time{
   font-size: 21px;
-  letter-spacing: 2.19px;
+  letter-spacing: 2px;
+  top: 10px;
 }
 /* amenities */
 .amenities{
@@ -134,7 +135,7 @@ section.left{
 }
 .price_item{
   width: 180px;
-  height: 50px;
+  height: 70px;
   align-items: center;
   padding: 0 0.1rem 0.1rem;
   grid-row-gap: 0.3rem;
@@ -143,7 +144,7 @@ section.left{
   font-size: 14px;
   color: #6D7278;
   letter-spacing: 1.46px;text-align: center; display:block;
-  line-height: 27px;
+  line-height: 38px;
   }
 .item_price{
   font-size: 30px;
@@ -215,7 +216,7 @@ section.left{
   }
   .container-article{
       height: 10%;margin: 0;padding: 20px;
-      box-sizing: inherit; grid-row-gap: 2rem;
+      box-sizing: inherit; grid-row-gap: 3rem;
       
   }
   .grid-container_amenities {
