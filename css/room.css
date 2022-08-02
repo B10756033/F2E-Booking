@@ -37,7 +37,7 @@ div.top_img{
 /*版面*/
 .container-article{
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: auto auto;
   grid-column-gap: 5rem;
   -webkit-column-gap: 5rem;
   -moz-column-gap: 5rem;
@@ -135,24 +135,21 @@ section.left{
 .price_item{
   width: 180px;
   height: 50px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 0 0.5rem 0.8rem;
+  padding: 0 0.1rem 0.1rem;
   grid-row-gap: 0.3rem;
 }
 .item_title{
   font-size: 14px;
   color: #6D7278;
-  letter-spacing: 1.46px;
-  text-align: right;
+  letter-spacing: 1.46px;text-align: center; display:block;
   line-height: 27px;
   }
 .item_price{
   font-size: 30px;
   color: #000000;
   letter-spacing: 3.13px;
-  text-align: right;
+  text-align: center;
   line-height: 27px;
 }
 /*form*/
@@ -178,7 +175,7 @@ section.left{
 .input_date{
   border: 1px solid #e2e2e2;
   border-radius: 5px;
-  width: 41%;
+  width: 40%;
   margin-bottom:1em;
   margin-top: 0.5em;
   padding: 3%;
@@ -206,16 +203,35 @@ section.left{
   }
 }
 @media (max-width: 785px) {
-  .container-article{
-      width:90%;
-      float: none;
-      height: auto;
-      margin-left: 2%;
+  .left{
+    width:94%;
   }
+  .right{
+    width:94%;
+  }
+  .container-article{
+      height: 10%;grid-template-columns: auto;margin: 0 3% 0 3%;
+      box-sizing: inherit;
+  }
+  .grid-container_amenities {
+    display: grid;
+    grid-gap: 8%;
+    width: 90%;
+    grid-template-columns: auto auto;
+  }
+  .grid-container {
+    grid-template-rows: repeat(2,30vw);
+    height: 60vw;
+  }
+  .card_prices{
+    width:94%;grid-column-gap: 0;grid-template-columns: auto auto;
+  }
+  
 }
 .footer{
   text-align: center;
   color: #919395;
+  margin-bottom: 1px;display: grid;
 }
 /*轉場*/
 #preloader {/*   這是整個會蓋住畫面的底色色塊  */

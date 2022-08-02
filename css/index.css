@@ -32,7 +32,7 @@ img{
 }
 .bookingInfo{
     display: grid;
-    grid-template-columns: 100px 250px;
+    grid-template-columns: 50px 250px;
     grid-column-gap: 1.5rem;
     -webkit-column-gap: 1.5rem;
     -moz-column-gap: 1.5rem;
@@ -44,11 +44,11 @@ img{
     border-right: 1px solid #FFFFFF;
     justify-content: center;
 }
-.infoLeft img,.infoRight img{
+.infoRight img{
     width: 20px;float: left;
 }
 .infoLeft img{
-    margin-right: 1.5rem;
+    margin-bottom: 0.5rem;width: 20px;
 }
 .infoRight img{
     margin-right: 1rem;
@@ -137,7 +137,7 @@ h3{font-size: 1.35rem;
 .normalDayPrice_1,.normalDayPrice_2,.normalDayPrice_3,.normalDayPrice_4,.normalDayPrice_5,.normalDayPrice_6{
     font-size: 21px;
     color: #000000;
-    letter-spacing: 2.19px;
+    letter-spacing: 2px;
     line-height: 31px;
     position: relative;
     bottom: 10px;
