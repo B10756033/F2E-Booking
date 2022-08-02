@@ -193,7 +193,7 @@ section.left{
   .container-article{
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      width:70%;
+      width:auto;margin: 0;padding: 50px;
   }
   .left{
     width: 100%;
@@ -201,22 +201,27 @@ section.left{
   .right{
     width: 100%;
   }
+  .footer{
+    line-height: 50px;top: 48vw;
+    position : relative;
+  }
 }
 @media (max-width: 785px) {
   .left{
-    width:94%;
+    width:98%;
   }
   .right{
     width:94%;
   }
   .container-article{
-      height: 10%;grid-template-columns: auto;margin: 0 3% 0 3%;
-      box-sizing: inherit;
+      height: 10%;margin: 0;padding: 20px;
+      box-sizing: inherit; grid-row-gap: 2rem;
+      
   }
   .grid-container_amenities {
     display: grid;
     grid-gap: 8%;
-    width: 90%;
+    width: 100%;
     grid-template-columns: auto auto;
   }
   .grid-container {
@@ -226,12 +231,15 @@ section.left{
   .card_prices{
     width:94%;grid-column-gap: 0;grid-template-columns: auto auto;
   }
-  
+  .footer{
+    line-height: 20px;top: 20vw;
+    position : relative;
+  }
 }
 .footer{
   text-align: center;
-  color: #919395;
-  margin-bottom: 1px;display: grid;
+  color: #919395;  
+  position : relative;
 }
 /*轉場*/
 #preloader {/*   這是整個會蓋住畫面的底色色塊  */

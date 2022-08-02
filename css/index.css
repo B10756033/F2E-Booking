@@ -137,7 +137,7 @@ h3{font-size: 1.35rem;
 .normalDayPrice_1,.normalDayPrice_2,.normalDayPrice_3,.normalDayPrice_4,.normalDayPrice_5,.normalDayPrice_6{
     font-size: 21px;
     color: #000000;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 31px;
     position: relative;
     bottom: 10px;
@@ -145,7 +145,7 @@ h3{font-size: 1.35rem;
 .normalDay{
     font-size: 12px;
     color: #000000;
-    letter-spacing: 1.25px;
+    letter-spacing: 1px;
     line-height: 18px;
 }
 .holidayPrice_1,.holidayPrice_2,.holidayPrice_3,.holidayPrice_4,.holidayPrice_5,.holidayPrice_6,.holiday{
