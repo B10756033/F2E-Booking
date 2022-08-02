@@ -30,10 +30,11 @@ xhr.onload = function() {
       document.querySelector(".description").innerHTML = '<br>'+_description;
       document.querySelector(".checkIn_time").innerHTML = str.room[0].checkInAndOut.checkInEarly+' － '+str.room[0].checkInAndOut.checkInLate;
       document.querySelector(".checkOut_time").innerHTML = str.room[0].checkInAndOut.checkOut
+      $("#status").delay(700).fadeOut(500); //delay --> 延遲幾秒才fadeOut
+      $("#preloader").delay(1000).fadeOut(800);
     }
     addPics()
-    $("#status").delay(700).fadeOut(500); //delay --> 延遲幾秒才fadeOut
-    $("#preloader").delay(1000).fadeOut(800);
+    
 }
 
 
