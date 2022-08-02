@@ -32,9 +32,8 @@ xhr.onload = function() {
       document.querySelector(".checkOut_time").innerHTML = str.room[0].checkInAndOut.checkOut
     }
     addPics()
+    $("#status").delay(700).fadeOut(500); //delay --> 延遲幾秒才fadeOut
+    $("#preloader").delay(1000).fadeOut(800);
 }
 
-$(window).load(function() { // 確認整個頁面讀取完畢再將這三個div隱藏起來
-  $("#status").delay(700).fadeOut(500); //delay --> 延遲幾秒才fadeOut
-  $("#preloader").delay(1000).fadeOut(800);
-})
+
