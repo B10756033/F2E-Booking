@@ -1,3 +1,6 @@
+span,div{
+  font-family: sans-serif;
+}
 *{
   margin: 0; padding: 0;
 }
@@ -37,11 +40,11 @@ div.top_img{
 /*版面*/
 .container-article{
   display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 5rem;
-  -webkit-column-gap: 5rem;
-  -moz-column-gap: 5rem;
-  column-gap: 5rem;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 4rem;
+  -webkit-column-gap: 4rem;
+  -moz-column-gap: 4rem;
+  column-gap: 4rem;
   position: relative;
   top: 50px;
   height: 750px;
@@ -146,7 +149,7 @@ section.left{
   letter-spacing: 1.46px;text-align: center; display:block;
   line-height: 38px;
   }
-.item_price{
+.normalDayPrice,.holidayPrice{
   font-size: 30px;
   color: #000000;
   letter-spacing: 3.13px;
@@ -173,12 +176,21 @@ section.left{
   margin-bottom:1em;
   padding: 3%;
 }
-.input_date{
+.input_date_1,.input_date_2{
   border: 1px solid #e2e2e2;
   border-radius: 5px;
-  width: 40%;
+  width: 15px;
   margin-bottom:1em;
   margin-top: 0.5em;
+  padding: 3%;
+}
+.date_1,.date_2{
+  font-size: 18px;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  width: 10px;
+  margin-top: 0.5em;
+  margin-bottom:1em;
   padding: 3%;
 }
 .Info_btn button{

@@ -6,15 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title class="Room">White Space-Deluxe Double Room</title>
         <link rel="stylesheet" href="css/room.css">
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     </head>
     <body>
         <header class="container-header">
             <div class="container-header_img">
                 
                 <div class="grid-container">
-                    <div class="item1"><img src="./image/room4-3.jfif" style="width:100%;"></div>
-                    <div class="item2"><img src="./image/room4-2.jfif" style="width:100%;"></div>
-                    <div class="item3"><img src="./image/room4-1.jfif" style="width:100%;"></div>  
+                    <div class="item1"><a data-fancybox="gallery" href="./image/room4-3.jfif"><img src="./image/room4-3.jfif" style="width:100%;"></div></a>
+                    <div class="item2"><a data-fancybox="gallery" href="./image/room4-2.jfif"><img src="./image/room4-2.jfif" style="width:100%;"></div></a>
+                    <div class="item3"><a data-fancybox="gallery" href="./image/room4-1.jfif"><img src="./image/room4-1.jfif" style="width:100%;"></div></a>
                 </div>
                 <div class="top_img" >
                     <div class="logo" >
@@ -92,11 +95,11 @@
                 <div class="card_prices">
                     <div class="price_item">
                         <span class="item_title">平日(一~四)</span>
-                        <div class="item_price">NT.1380</div>
+                        <div class="normalDayPrice"></div>
                     </div>
                     <div class="price_item">
                         <span class="item_title">假日(五~日)</span>
-                        <div class="item_price">NT.1500</div>
+                        <div class="holidayPrice"></div>
                     </div>
                 </div>
                 <div class="booking_form">
@@ -111,9 +114,11 @@
                         </div>
                         <div class="bookingInfo">
                             <label class="label">預約起訖</label><br>
-                            <input type="date" class="input_date" name="in" value="">
+                            <label class="date_1">　　　　</label>
+                            <input type="date" class="input_date_1" name="in" value=""  >
                             <label>~</label>
-                            <input type="date" class="input_date" name="out" value="">
+                            <label class="date_2">　　　　</label>
+                            <input type="date" class="input_date_2" name="out" value="">
                         </div>
                         <div class="bookingInfo">
                             <div class="Info_btn">

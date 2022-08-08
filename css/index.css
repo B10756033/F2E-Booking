@@ -1,3 +1,7 @@
+span,div{
+    font-family: sans-serif;
+}
+
 body{
     margin: 0; padding: 0;
 }
@@ -54,7 +58,7 @@ img{
     margin-right: 1rem;
 }
 .item_text{
-    font-size: 14px;
+    font-size: 16px;
     color: #FFFFFF;
 }
 .Info_item{

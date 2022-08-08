@@ -30,11 +30,34 @@ xhr.onload = function() {
       document.querySelector(".description").innerHTML = '<br>'+_description;
       document.querySelector(".checkIn_time").innerHTML = str.room[0].checkInAndOut.checkInEarly+' － '+str.room[0].checkInAndOut.checkInLate;
       document.querySelector(".checkOut_time").innerHTML = str.room[0].checkInAndOut.checkOut
+      document.querySelector(".normalDayPrice").innerHTML = 'NT.'+str.room[0].normalDayPrice
+      document.querySelector(".holidayPrice").innerHTML = 'NT.'+str.room[0].holidayPrice
+
       $("#status").delay(700).fadeOut(500); //delay --> 延遲幾秒才fadeOut
       $("#preloader").delay(1000).fadeOut(800);
     }
+    document.querySelector(".input_date_1").addEventListener("change", mydate1);
+    document.querySelector(".input_date_2").addEventListener("change", mydate2);
+
+    function mydate1()
+    {
+      d=new Date(document.querySelector(".input_date_1").value);
+      dt=d.getDate();
+      mn=d.getMonth();
+      mn++;
+      yy=d.getFullYear();
+      document.querySelector(".date_1").innerHTML=yy+"-"+mn+"-"+dt
+    }
+    function mydate2()
+    {
+      d=new Date(document.querySelector(".input_date_2").value);
+      dt=d.getDate();
+      mn=d.getMonth();
+      mn++;
+      yy=d.getFullYear();
+      document.querySelector(".date_2").innerHTML=yy+"-"+mn+"-"+dt
+    }
     addPics()
-    
 }
 
 
